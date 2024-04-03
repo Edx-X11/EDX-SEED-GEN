@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seed Generator</title>
+    <style>
+        /* CSS styles */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Seed Generator</h2>
+        <!-- Input fields and button -->
+        <div>
+            <label for="count">Number of Seeds to Generate:</label>
+            <input type="number" id="count" min="1" value="1">
+        </div>
+        <div>
+            <label for="outputType">Output Type:</label>
+            <select id="outputType">
+                <option value="txt">Text</option>
+                <option value="json">JSON</option>
+                <option value="csv">CSV</option>
+                <option value="nbt">NBT</option>
+                <option value="all">All</option>
+            </select>
+        </div>
+        <div>
+            <label for="filenamePrefix">Filename Prefix:</label>
+            <input type="text" id="filenamePrefix" placeholder="e.g., my_seeds">
+        </div>
+        <button onclick="generateSeeds()">Generate Seeds</button>
+        <!-- Output message -->
+        <div id="output"></div>
+    </div>
+
+    <!-- Include the JavaScript file -->
+    <script src="generator.js"></script>
+</body>
+</html>
